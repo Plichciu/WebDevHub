@@ -1,0 +1,121 @@
+.hamburger {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 2rem;
+	height: 1rem;
+	margin: 1em 0 0 0.2em;
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1.125rem;
+	color: rgb(19, 36, 50);
+	text-align: center;
+  margin: 0 1rem;
+}
+
+span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: white;
+	border-radius: 5px;
+}
+
+.top-bun {
+	width: 35%;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out !important;
+}
+
+.beef {
+	width: 50%;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.hamburger:hover span {
+	width: 100%;
+	background: #ffca0f;
+}
+
+.hamburger:hover .top-bun {
+	-webkit-animation: 0.75s ease-in-out 1 alternate 400ms burger-hover;
+	-moz-animation: 0.75s ease-in-out 1 alternate 400ms burger-hover;
+	animation: 0.75s ease-in-out 1 alternate 400ms burger-hover;
+}
+
+.hamburger:hover .beef {
+	-webkit-animation: 0.75s ease-in-out 1 alternate 200ms burger-hover;
+	-moz-animation: 0.75s ease-in-out 1 alternate 200ms burger-hover;
+	animation: 0.75s ease-in-out 1 alternate 200ms burger-hover;
+}
+
+.hamburger:hover .bottom-bun {
+	-webkit-animation: 0.75s ease-in-out 1 alternate burger-hover;
+	-moz-animation: 0.75s ease-in-out 1 alternate burger-hover;
+	animation: 0.75s ease-in-out 1 alternate burger-hover;
+}
+
+@-webkit-keyframes burger-hover {
+	from {
+		width: 100%;
+	}
+
+	50% {
+		width: 50%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@-o-keyframes burger-hover {
+	from {
+		width: 100%;
+	}
+
+	50% {
+		width: 50%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@-moz-keyframes burger-hover {
+	from {
+		width: 100%;
+	}
+
+	50% {
+		width: 50%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes burger-hover {
+	from {
+		width: 100%;
+	}
+
+	50% {
+		width: 50%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
