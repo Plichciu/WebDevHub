@@ -19,19 +19,12 @@ const Navbar = () => {
 						</a>
 					</div>
 				</div>
-				<div className="navbar-center hidden lg:flex  text-white">
-					<ul className="menu menu-horizontal text-xl px-1">
-						<li className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
-							<a>O nas</a>
-						</li>
-						<li className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
-							<a>Dlaczego my?</a>
-						</li>
-						<li className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
-							<a>Usługi</a>
-						</li>
-					</ul>
-				</div>
+				<nav className="navbar-center hidden lg:flex lg:gap-5 text-lg  text-white">
+					<a href="" className='hover:text-yellowColor hover:scale-90 transition-all duration-500'>O nas</a>
+					<a href="" className='hover:text-yellowColor hover:scale-90 transition-all duration-500'>Usługi</a>
+					<a href="" className='hover:text-yellowColor hover:scale-90 transition-all duration-500'>Dlaczego my?</a>
+					
+				</nav>
 				<div className="navbar-end">
 					<a className="btn">Button</a>
 				</div>

@@ -26,7 +26,7 @@ const Main = () => {
 							<h2>
 								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, facilis!
 							</h2>
-							<button className={`${styles.buttonMain} `}>Więcej</button>
+							<button className='button-main'>Więcej</button>
 						</div>
 					</div>
 				</div>

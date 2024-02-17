@@ -19,18 +19,23 @@ const Drawer = () => {
 					htmlFor="my-drawer"
 					aria-label="close sidebar"
 					className="drawer-overlay"></label>
-				<ul className="menu p-4 w-80 min-h-full text-white bg-mainColor text-xl">
-					{/* Sidebar content here */}
-					<li className="mt-12 hover:text-yellowColor transition-color duration-500">
-						<a>O nas</a>
-					</li>
-					<li className="hover:text-yellowColor transition-color duration-500">
-						<a>Dlaczego my?</a>
-					</li>
-					<li className="hover:text-yellowColor transition-color duration-500">
-						<a>Usługi</a>
-					</li>
-				</ul>
+				<nav className="menu p-4 w-80 min-h-full gap-5 text-white bg-mainColor text-xl">
+					<a
+						href=""
+						className="hover:text-yellowColor transition-color duration-500 mt-16 p-2">
+						O nas
+					</a>
+					<a
+						href=""
+						className="hover:text-yellowColor transition-color duration-500 p-2">
+						Usługi
+					</a>
+					<a
+						href=""
+						className="hover:text-yellowColor transition-color duration-500 p-2">
+						Dlaczego my?
+					</a>
+				</nav>
 			</div>
 		</div>
 	)
