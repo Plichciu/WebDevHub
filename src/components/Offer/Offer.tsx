@@ -8,7 +8,7 @@ const Offer = () => {
 		<ScrollSpy>
 			<section id="offer" className="content-container relative">
 				<div className="absolute -left-36 -bottom-20 lg:-bottom-64">
-					<img src={squareLines} className="opacity-65 w-[20rem] lg:w-[30rem]" />
+					<img src={squareLines} className="opacity-65 w-[20rem] lg:w-[30rem]" alt="" />
 				</div>
 				<Title text="Co oferujemy?" />
 				<div className="flex flex-col flex-wrap  items-center justify-center lg:gap-10 lg:flex-row">

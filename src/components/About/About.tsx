@@ -7,7 +7,7 @@ const About = () => {
 		
 			<section id="about" className="content-container relative">
 				<div className="absolute -right-36 -bottom-20 lg:-bottom-32">
-					<img src={wavyLines} className="opacity-65 w-[20rem] lg:w-fit" />
+					<img src={wavyLines} className="opacity-65 w-[20rem] lg:w-fit" alt='' />
 				</div>
 				<div className="flex flex-col gap-12 lg:flex-row">
 					<div className="mx-auto">

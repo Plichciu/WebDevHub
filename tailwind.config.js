@@ -10,6 +10,7 @@ export default {
 				mainColor: '#000114',
 				secondColor: '#0C161F',
 				yellowColor: '#FFCA0F',
+				hoverButton: '#2002a1',
 			},
 		},
 	},

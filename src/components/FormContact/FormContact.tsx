@@ -127,7 +127,7 @@ const FormContact = () => {
 				<button
 					onClick={validateForm}
 					type="submit"
-					className="button-main focus:bg-blue-600">
+					className="button-main focus:bg-hoverButton hover:bg-hoverButton">
 					{loadingButton ? 'Wysyłanie...' : 'Wyślij'}
 				</button>
 			</form>

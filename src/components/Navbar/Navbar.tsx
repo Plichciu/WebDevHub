@@ -20,39 +20,32 @@ const Navbar = () => {
 					</div>
 				</div>
 				<nav className="navbar-center hidden lg:flex lg:gap-5 text-lg  text-white">
-				
 					<a
-			
 						href="#about"
 						className="hover:text-yellowColor hover:scale-90 transition-all duration-500 ">
 						O nas
 					</a>
 					<a
-		
 						href="#benefits"
 						className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
 						Korzyści
 					</a>
 					<a
-	
 						href="#chooseus"
 						className="hover:text-yellowColor hover:scale-90 transition-all duration-500 ">
 						Dlaczego my?
 					</a>
 					<a
-			
 						href="#steps"
 						className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
 						Współpraca
 					</a>
 					<a
-	
 						href="#offer"
 						className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
 						Oferta
 					</a>
 					<a
-				
 						href="#faq"
 						className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
 						FAQ
@@ -60,9 +53,8 @@ const Navbar = () => {
 				</nav>
 				<div className="navbar-end">
 					<a
-				
 						href="#contact"
-						className="bg-yellowColor text-white py-1 px-3 uppercase rounded-sm font-semibold hover:bg-blue-600 transition-colors cursor-pointer text-sm md:text-base md:py-2 md:px-5">
+						className="block bg-[#cfa304] text-white px-8 py-2 rounded-sm uppercase font-semibold hover:bg-hoverButton transition-colors duration-500">
 						Kontakt
 					</a>
 				</div>

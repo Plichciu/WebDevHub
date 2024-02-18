@@ -16,6 +16,24 @@
 	
 	}
 
+	.button-a-main {
+		display: block;
+		width: min-content;
+		background: #cfa304;
+		color: white;
+		border-radius: 5px;
+		transition: 0.5s;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 0.8rem 5rem;
+		font-size: 1.6rem;
+		cursor: pointer;
+	}
+
+	.button-a-main:hover {
+		background: #2002a1;
+	}
+
 	.button-main {
 		position: relative;
 		background: #cfa304;
