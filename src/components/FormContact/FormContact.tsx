@@ -117,6 +117,7 @@ const FormContact = () => {
 					<label htmlFor="terms" className="text-sm text-gray-300 ml-2">
 						Przeczytałem oraz akcjeptuję{' '}
 						<Link
+							target="_blank"
 							className="underline hover:text-yellowColor transition-colors"
 							to="/polityka-prywatnosci">
 							politykę prywatności

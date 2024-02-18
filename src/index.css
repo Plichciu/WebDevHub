@@ -6,7 +6,14 @@
 	.content-container {
 		max-width: 1800px;
 		margin: 0 auto;
-		padding: 8rem 1rem;
+		padding: 8rem 1.2rem;
+	}
+
+	.footer-container {
+		max-width: 1800px;
+		margin: 0 auto;
+		padding: 2rem 1.2rem;
+	
 	}
 
 	.button-main {
@@ -25,7 +32,6 @@
 		.button-main {
 			padding: 0.8rem 3rem;
 		}
-		
 	}
 
 	.button-main:hover {
@@ -49,7 +55,22 @@
 		);
 		border-radius: 7px;
 	}
+
+	ul :focus {
+		color: #cfa304 !important;
+	}
+
+	ul :active {
+		color: #cfa304 !important;
+		background: none !important;
+	}
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
+
 
 body {
 	font-family: 'League Spartan Variable', sans-serif;
@@ -69,3 +90,5 @@ body::-webkit-scrollbar-thumb {
 	outline: 1px solid rgb(29, 28, 27);
 	border-radius: 4px;
 }
+
+

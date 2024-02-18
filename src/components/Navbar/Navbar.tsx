@@ -10,7 +10,7 @@ const Navbar = () => {
 						<Drawer />
 					</div>
 					<div>
-						<a href="">
+						<a href="#main">
 							<img
 								src={logo}
 								alt="Logo WebDevHub"
@@ -20,13 +20,51 @@ const Navbar = () => {
 					</div>
 				</div>
 				<nav className="navbar-center hidden lg:flex lg:gap-5 text-lg  text-white">
-					<a href="" className='hover:text-yellowColor hover:scale-90 transition-all duration-500'>O nas</a>
-					<a href="" className='hover:text-yellowColor hover:scale-90 transition-all duration-500'>Usługi</a>
-					<a href="" className='hover:text-yellowColor hover:scale-90 transition-all duration-500'>Dlaczego my?</a>
-					
+				
+					<a
+			
+						href="#about"
+						className="hover:text-yellowColor hover:scale-90 transition-all duration-500 ">
+						O nas
+					</a>
+					<a
+		
+						href="#benefits"
+						className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
+						Korzyści
+					</a>
+					<a
+	
+						href="#chooseus"
+						className="hover:text-yellowColor hover:scale-90 transition-all duration-500 ">
+						Dlaczego my?
+					</a>
+					<a
+			
+						href="#steps"
+						className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
+						Współpraca
+					</a>
+					<a
+	
+						href="#offer"
+						className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
+						Oferta
+					</a>
+					<a
+				
+						href="#faq"
+						className="hover:text-yellowColor hover:scale-90 transition-all duration-500">
+						FAQ
+					</a>
 				</nav>
 				<div className="navbar-end">
-					<a className="btn">Button</a>
+					<a
+				
+						href="#contact"
+						className="bg-yellowColor text-white py-1 px-3 uppercase rounded-sm font-semibold hover:bg-blue-600 transition-colors cursor-pointer text-sm md:text-base md:py-2 md:px-5">
+						Kontakt
+					</a>
 				</div>
 			</div>
 		</div>
