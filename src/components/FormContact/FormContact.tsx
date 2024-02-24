@@ -117,8 +117,8 @@ const FormContact = () => {
 					<label htmlFor="terms" className="text-sm text-gray-300 ml-2">
 						Przeczytałem oraz akcjeptuję{' '}
 						<Link
-							target="_blank"
-							className="underline hover:text-yellowColor transition-colors"
+							target='_blank'
+							className="underline hover:text-accentColor transition-colors"
 							to="/polityka-prywatnosci">
 							politykę prywatności
 						</Link>
@@ -127,7 +127,7 @@ const FormContact = () => {
 				<button
 					onClick={validateForm}
 					type="submit"
-					className="button-main focus:bg-hoverButton hover:bg-hoverButton">
+					className="call-to-action-button">
 					{loadingButton ? 'Wysyłanie...' : 'Wyślij'}
 				</button>
 			</form>

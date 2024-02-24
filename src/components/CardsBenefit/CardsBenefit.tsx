@@ -3,7 +3,7 @@ import styles from './CardsBenefits.module.css'
 const CardsBenefit = () => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.card}>
+			<div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100" className={styles.card}>
 				<div className={styles.box}>
 					<div className={styles.content}>
 						<h2>01</h2>
@@ -18,21 +18,21 @@ const CardsBenefit = () => {
 				</div>
 			</div>
 
-			<div className={styles.card}>
+			<div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300" className={styles.card}>
 				<div className={styles.box}>
 					<div className={styles.content}>
 						<h2>02</h2>
 						<h3>Dostępność 24/7</h3>
 						<p>
 							Strona internetowa działa przez całą dobę, co oznacza, że ​​klienci mogą
-							zapoznać się z ofertą i informacjami o Twoim biznesie w każdej chwili.
+							zapoznać się z ofertą i informacjami o Twoim biznesie w każdej chwili. 
 						</p>
 						<span></span>
 					</div>
 				</div>
 			</div>
 
-			<div className={styles.card}>
+			<div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600" className={styles.card}>
 				<div className={styles.box}>
 					<div className={styles.content}>
 						<h2>03</h2>
@@ -47,7 +47,7 @@ const CardsBenefit = () => {
 				</div>
 			</div>
 
-			<div className={styles.card}>
+			<div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="900" className={styles.card}>
 				<div className={styles.box}>
 					<div className={styles.content}>
 						<h2>04</h2>

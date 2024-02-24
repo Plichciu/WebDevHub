@@ -7,7 +7,7 @@
 	overflow: hidden;
 }
 
-.squares li {
+.squares li  {
 	position: absolute;
 	display: block;
 	list-style: none;
@@ -16,13 +16,17 @@
 	background: transparent;
 	animation: animate 25s linear infinite;
 	bottom: -150px;
-	border: 1px solid rgba(255, 217, 0, 0.774);
+	
 }
 
-.squares li:nth-child(1) {
-	left: 25%;
-	width: 5rem;
-	height: 5rem;
+.squares li img {
+	opacity: 0.5;
+}
+
+.squares li:nth-child(1)  {
+	left: 15%;
+	width: 25rem;
+	height: 25rem;
 	animation-delay: 0s;
 }
 
@@ -35,7 +39,7 @@
 }
 
 .squares li:nth-child(3) {
-	left: 70%;
+	left: 20%;
 	width: 1.25rem;
 	height: 1.25rem;
 	animation-delay: 4s;
@@ -65,8 +69,8 @@
 
 .squares li:nth-child(7) {
 	left: 35%;
-	width: 11rem;
-	height: 11rem;
+	width: 8rem;
+	height: 8rem;
 	animation-delay: 7s;
 }
 

@@ -1,3 +1,4 @@
+@import './vars.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,21 +7,20 @@
 	.content-container {
 		max-width: 1800px;
 		margin: 0 auto;
-		padding: 8rem 1.2rem;
+		padding: 10rem 1.2rem;
 	}
 
 	.footer-container {
 		max-width: 1800px;
 		margin: 0 auto;
 		padding: 2rem 1.2rem;
-	
 	}
 
 	.button-a-main {
 		display: block;
 		width: min-content;
-		background: #cfa304;
-		color: white;
+		background: var(--accent-color);
+		color: black;
 		border-radius: 5px;
 		transition: 0.5s;
 		text-transform: uppercase;
@@ -28,50 +28,44 @@
 		padding: 0.8rem 5rem;
 		font-size: 1.6rem;
 		cursor: pointer;
+		transition: background-color 300ms !important;
 	}
 
-	.button-a-main:hover {
-		background: #2002a1;
-	}
-
-	.button-main {
-		position: relative;
-		background: #cfa304;
+	.call-to-action-button {
+		background: var(--call-to-action);
 		color: white;
 		border-radius: 5px;
 		transition: 0.5s;
 		text-transform: uppercase;
-		font-weight: 600;
-		padding: 0.8rem 6rem;
+		font-weight: 500;
+		padding: 0.8rem 5rem;
 		font-size: 1.6rem;
+		cursor: pointer;
+		transition: background-color 500ms !important;
+	
 	}
 
-	@media screen and (max-width: 768px) {
+	.call-to-action-button:hover{
+		background: var(--hover-call-to-action-color);
+	
+	}
+
+	.button-a-main:hover {
+		background-color: var(--hover-accent-color);
+	}
+
+	@media screen and (max-width: 328px) {
 		.button-main {
 			padding: 0.8rem 3rem;
+			font-size: 1.4rem;
 		}
 	}
 
-	.button-main:hover {
-		background: rgb(33, 2, 170);
-	}
-	.button-main::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: -1;
-		background-image: linear-gradient(
-			to right top,
-			#3002af,
-			#05039b,
-			rgb(7, 40, 187),
-			#0324b4,
-			rgb(24, 10, 145)
-		);
-		border-radius: 7px;
+	@media screen and (max-width: 768px) {
+		.button-a-main {
+			padding: 0.8rem 3rem;
+			font-size: 1.4rem;
+		}
 	}
 
 	ul :focus {
@@ -87,8 +81,6 @@
 html {
 	scroll-behavior: smooth;
 }
-
-
 
 body {
 	font-family: 'League Spartan Variable', sans-serif;
@@ -108,5 +100,3 @@ body::-webkit-scrollbar-thumb {
 	outline: 1px solid rgb(29, 28, 27);
 	border-radius: 4px;
 }
-
-

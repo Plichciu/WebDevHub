@@ -6,7 +6,7 @@ const FaqSection = () => {
 		
 			<section id="faq" className="content-container ">
 				<Title text="FAQ" />
-				<div>
+				<div className='pb-32'>
 					<Accordion />
 				</div>
 			</section>

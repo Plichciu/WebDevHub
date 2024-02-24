@@ -13,17 +13,17 @@ const Footer = () => {
 				<div className="text-sm space-y-1 lg:flex lg:items-center lg:gap-5 lg:space-y-0">
 					<div className="flex items-center gap-2">
 						<FaMailBulk />
-						<p className="hover:text-yellowColor transition-colors">
+						<p className="hover:text-accentColor transition-colors">
 							kontakt@webdevhub.pl
 						</p>
 					</div>
 					<div className="flex items-center gap-2">
 						<FaPhoneSquareAlt />
-						<p className="hover:text-yellowColor transition-colors">579 265 646</p>
+						<p className="hover:text-accentColor transition-colors">579 265 646</p>
 					</div>
 					<div className="flex items-center gap-2">
 						<FaFacebookSquare />
-						<p className="hover:text-yellowColor transition-colors">
+						<p className="hover:text-accentColor transition-colors">
 							<a target="_blank" href="https://www.facebook.com/webdevhubpl/">
 								facebook.com/webdevhub.pl
 							</a>

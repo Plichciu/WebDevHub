@@ -1,3 +1,6 @@
+import { MdErrorOutline } from 'react-icons/md'
+import { GoCheckCircle } from 'react-icons/go'
+
 const Alert = ({ message }: { message: string }) => {
 	return (
 		<div
@@ -7,18 +10,13 @@ const Alert = ({ message }: { message: string }) => {
 					? 'alert-success'
 					: 'alert-error'
 			} flex fixed w-[90%] sm:w-96 bottom-5 left-5 opacity-80`}>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				className="stroke-current shrink-0 h-6 w-6"
-				fill="none"
-				viewBox="0 0 24 24">
-				<path
-					strokeLinecap="round"
-					strokeLinejoin="round"
-					strokeWidth="2"
-					d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-				/>
-			</svg>
+			<span>
+				{message === 'Dziękujemy, twój formularz został wysłany poprawnie.' ? (
+					<GoCheckCircle className="text-xl" />
+				) : (
+					<MdErrorOutline className="text-xl" />
+				)}
+			</span>
 			<p>{message}</p>
 		</div>
 	)

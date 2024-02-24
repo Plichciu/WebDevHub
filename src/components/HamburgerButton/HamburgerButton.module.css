@@ -14,10 +14,10 @@
 	font-size: 1.125rem;
 	color: rgb(19, 36, 50);
 	text-align: center;
-  margin: 0 1rem;
+	margin: 0 1rem;
 }
 
-span {
+.hamburger span {
 	display: block;
 	width: 100%;
 	height: 2px;
@@ -25,7 +25,7 @@ span {
 	border-radius: 5px;
 }
 
-.top-bun {
+.topBun {
 	width: 35%;
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
@@ -43,10 +43,10 @@ span {
 
 .hamburger:hover span {
 	width: 100%;
-	background: #ffca0f;
+	background: #66E5FB; 
 }
 
-.hamburger:hover .top-bun {
+.hamburger:hover .topBun {
 	-webkit-animation: 0.75s ease-in-out 1 alternate 400ms burger-hover;
 	-moz-animation: 0.75s ease-in-out 1 alternate 400ms burger-hover;
 	animation: 0.75s ease-in-out 1 alternate 400ms burger-hover;
@@ -58,7 +58,7 @@ span {
 	animation: 0.75s ease-in-out 1 alternate 200ms burger-hover;
 }
 
-.hamburger:hover .bottom-bun {
+.hamburger:hover .bottomBun {
 	-webkit-animation: 0.75s ease-in-out 1 alternate burger-hover;
 	-moz-animation: 0.75s ease-in-out 1 alternate burger-hover;
 	animation: 0.75s ease-in-out 1 alternate burger-hover;

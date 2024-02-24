@@ -1,24 +1,18 @@
 
 .area {
-	background: url('../../images/bgcwww.jpg') no-repeat center center/cover;
+	background: url('../../images/mainBgc.jpg') no-repeat center center/cover;
 	background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 	width: 100vw;
 	height: 100vh;
 }
 
-
-
 @media (max-width: 1024px) {
 	.area {
-		background: url('../../images/bgcwwwMobile.jpg') no-repeat center center/cover;
+		background: url('../../images/mainBgc.jpg');
 	}
 }
 
-@media (min-width: 1600px) {
-	.area {
-		background: url('../../images//bgcwwwDesktop.jpg') no-repeat center center/cover;
-	}
-}
+
 
 
 

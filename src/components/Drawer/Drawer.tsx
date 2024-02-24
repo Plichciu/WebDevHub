@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './DrawerStyles.css'
+import HamburgerButton from '../HamburgerButton/HamburgerButton'
 
 const Drawer = () => {
 	const [checked, setChecked] = useState('')
@@ -16,17 +16,14 @@ const Drawer = () => {
 				className="drawer-toggle"
 				checked={checked === 'checked'}
 			/>
-			<div className={`drawer-content`}>
+			<div className="drawer-content">
 				<label htmlFor="my-drawer" className="drawer-button p-2 relative z-50">
-					<div onClick={handleClick} className="hamburger  my-auto">
-						<span className="top-bun"></span>
-						<span className="beef"></span>
-						<span className="bottom-bun"></span>
-					</div>
+					<HamburgerButton handleClick={handleClick} />
 				</label>
 			</div>
-			<div className={`drawer-side `}>
-				<label onClick={handleClick}
+			<div className="drawer-side">
+				<label
+					onClick={handleClick}
 					htmlFor="my-drawer"
 					aria-label="close sidebar"
 					className="drawer-overlay"></label>
@@ -34,42 +31,42 @@ const Drawer = () => {
 					<a
 						onClick={handleClick}
 						href="#about"
-						className="hover:text-yellowColor transition-color duration-500 p-2 mt-16  ">
+						className="hover:text-accentColor transition-color duration-500 p-2 mt-16  ">
 						O nas
 					</a>
 
 					<a
 						onClick={handleClick}
 						href="#benefits"
-						className="hover:text-yellowColor transition-color duration-500 p-2">
+						className="hover:text-accentColor transition-color duration-500 p-2">
 						Korzyści
 					</a>
 
 					<a
 						onClick={handleClick}
 						href="#chooseus"
-						className="hover:text-yellowColor transition-color duration-500 p-2">
+						className="hover:text-accentColor transition-color duration-500 p-2">
 						Dlaczego my?
 					</a>
 
 					<a
 						onClick={handleClick}
 						href="#steps"
-						className="hover:text-yellowColor transition-color duration-500 p-2">
+						className="hover:text-accentColor transition-color duration-500 p-2">
 						Współpraca
 					</a>
 
 					<a
 						onClick={handleClick}
 						href="#offer"
-						className="hover:text-yellowColor transition-color duration-500 p-2">
+						className="hover:text-accentColor transition-color duration-500 p-2">
 						Oferta
 					</a>
 
 					<a
 						onClick={handleClick}
 						href="#faq"
-						className="hover:text-yellowColor transition-color duration-500 p-2">
+						className="hover:text-accentColor transition-color duration-500 p-2">
 						FAQ
 					</a>
 				</nav>
