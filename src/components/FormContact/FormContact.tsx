@@ -46,55 +46,67 @@ const FormContact = () => {
 		e.preventDefault()
 
 		if (name === '' || email === '' || message === '') {
-			showAlertFn('Wypełnij wszystkie pola')
+			showAlertFn('Proszę uzupełnić wszystkie pola oznaczone gwiazdką')
 			return
 		}
 		if (!terms) {
-			showAlertFn('Zaakceptuj politykę prywatności')
+			showAlertFn('Proszę zaakceptować politykę prywatności')
 			return
 		}
 		sendtoDb()
 	}
 
+	const dataInputs = [
+		{
+			label: 'Imię',
+			type: 'text',
+			id: 'name',
+			value: name,
+			onChange: (e: any) => setName(e.target.value),
+			mandatory: true,
+		},
+		{
+			label: 'Email',
+			type: 'email',
+			id: 'email',
+			value: email,
+			onChange: (e: any) => setEmail(e.target.value),
+			mandatory: true,
+		},
+		{
+			label: 'Telefon',
+			type: 'text',
+			id: 'phone',
+			value: phone,
+			onChange: (e: any) => setPhone(e.target.value),
+			mandatory: false,
+		},
+	]
+
 	return (
 		<div className="flex justify-center items-center mt-10 w-[90%] lg:w-[50%]">
 			<form className="flex flex-col w-full space-y-5" action="">
-				<div className="flex flex-col w-full">
-					<label htmlFor="name">Imię</label>
-					<div className="relative">
-						<input
-							value={name}
-							onChange={e => setName(e.target.value)}
-							className=" w-full mt-2 p-3 bg-transparent border-gray-400 border-2 border-solid rounded-md focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out focus:text-black"
-							type="text"
-							id="name"
-						/>
-						<FaStarOfLife className="text-red-500 absolute top-[50%] right-4 translate-y-[-50%] text-sm" />
-					</div>
-				</div>
-				<div className="flex flex-col">
-					<label htmlFor="email">Email</label>
-					<div className="relative">
-						<input
-							value={email}
-							onChange={e => setEmail(e.target.value)}
-							className=" w-full mt-2 p-3 bg-transparent border-gray-400 border-2 border-solid rounded-md focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out focus:text-black"
-							type="email"
-							id="email"
-						/>
-						<FaStarOfLife className="text-red-500 absolute top-[50%] right-4 translate-y-[-50%] text-sm" />
-					</div>
-				</div>
-				<div className="flex flex-col">
-					<label htmlFor="phone">Telefon</label>
-					<input
-						value={phone}
-						onChange={e => setPhone(e.target.value)}
-						className=" w-full p-3 mt-2 bg-transparent border-gray-400 border-2 border-solid rounded-md focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out focus:text-black"
-						type="tel"
-						id="phone"
-					/>
-				</div>
+				{dataInputs.map((input, index) => {
+					return (
+						<div key={index} className="flex flex-col">
+							<label htmlFor={input.id}>{input.label}</label>
+							<div className="relative">
+								<input
+									value={input.value}
+									onChange={input.onChange}
+									className=" w-full p-3 mt-2 bg-transparent border-gray-400  border-2 border-solid rounded-md focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out focus:text-black"
+									type={input.type}
+									id={input.id}
+								/>
+								{input.mandatory ? (
+									<FaStarOfLife className="text-red-500 absolute top-1/2 right-5 translate-y-[-50%] text-sm" />
+								) : (
+									''
+								)}
+							</div>
+						</div>
+					)
+				})}
 				<div className="flex flex-col">
 					<label htmlFor="message">Wiadomość</label>
 					<div className="relative">
@@ -102,7 +114,7 @@ const FormContact = () => {
 							value={message}
 							onChange={e => setMessage(e.target.value)}
 							rows={5}
-							className=" w-full mt-2 p-3 bg-transparent border-gray-400 border-2 border-solid rounded-md focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out focus:text-black resize-none"
+							className=" w-full mt-2 p-3 bg-transparent border-gray-400  border-2 border-solid rounded-md focus:bg-white focus:border-transparent transition-all duration-300 ease-in-out focus:text-black resize-none"
 							id="message"></textarea>
 						<FaStarOfLife className="text-red-500 absolute top-10 right-4 translate-y-[-50%] text-sm" />
 					</div>
@@ -113,21 +125,19 @@ const FormContact = () => {
 						type="checkbox"
 						id="terms"
 						checked={terms}
+						className="cursor-pointer"
 					/>
 					<label htmlFor="terms" className="text-sm text-gray-300 ml-2">
 						Przeczytałem oraz akcjeptuję{' '}
 						<Link
-							target='_blank'
+							target="_blank"
 							className="underline hover:text-accentColor transition-colors"
 							to="/polityka-prywatnosci">
 							politykę prywatności
 						</Link>
 					</label>
 				</div>
-				<button
-					onClick={validateForm}
-					type="submit"
-					className="call-to-action-button">
+				<button onClick={validateForm} type="submit" className="call-to-action-button">
 					{loadingButton ? 'Wysyłanie...' : 'Wyślij'}
 				</button>
 			</form>

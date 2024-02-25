@@ -1,3 +1,5 @@
+@import '../../vars.css';
+
 .hamburger {
 	position: relative;
 	display: flex;
@@ -43,7 +45,7 @@
 
 .hamburger:hover span {
 	width: 100%;
-	background: #66E5FB; 
+	background: var(--accent-color); 
 }
 
 .hamburger:hover .topBun {

@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
 		<div className="bg-mainColor text-white">
 			<NavbarForOtherSites />
 			<section className="content-container">
-				<Title text='Polityka prywatności' />
+				<Title text="Polityka prywatności" />
 				<div>
 					<p>
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas molestiae

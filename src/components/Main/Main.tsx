@@ -1,4 +1,4 @@
-import Squares from '../Squares/Squares'
+import LightsAnimation from '../LightsAnimation/LightsAnimation'
 import styles from './Main.module.css'
 
 const Main = () => {
@@ -6,7 +6,7 @@ const Main = () => {
 		<main id="main" className="bg-mainColor relative ">
 			<div className="">
 				<div className={`${styles.area} h-screen mx-auto p-8 overflow-y-hidden `}>
-					<Squares />
+					<LightsAnimation />
 					<div className="relative text-white h-screen lg:flex lg:flex-col lg:justify-center max-w-[1800px] mx-auto">
 						<div className="relative flex flex-col justify-center h-full lg:h-[60%] ">
 							<div className="relative xl:w-1/2 space-y-5 lg:space-y-12">
@@ -37,10 +37,3 @@ const Main = () => {
 }
 
 export default Main
-
-{
-	/* <h1 className="xxs:text-3xl text-5xl font-bold lg:text-[3.2rem] xl:text-[5rem]">
-Tworzymy profesjonalne <br className="hidden lg:block" /> strony
-Internetowe
-</h1> */
-}

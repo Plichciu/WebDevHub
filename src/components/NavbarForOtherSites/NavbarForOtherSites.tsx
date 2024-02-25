@@ -14,7 +14,6 @@ const NavbarForOtherSites = () => {
 						</div>
 					</div>
 				</div>
-
 				<div className="navbar-end">
 					<a
 						href="/#contact"

@@ -8,6 +8,33 @@ const Drawer = () => {
 		checked == 'checked' ? setChecked('') : setChecked('checked')
 	}
 
+	const navItems = [
+		{
+			name: 'O nas',
+			link: '#about',
+		},
+		{
+			name: 'Korzyści',
+			link: '#benefits',
+		},
+		{
+			name: 'Dlaczego my?',
+			link: '#chooseus',
+		},
+		{
+			name: 'Współpraca',
+			link: '#steps',
+		},
+		{
+			name: 'Oferta',
+			link: '#offer',
+		},
+		{
+			name: 'FAQ',
+			link: '#faq',
+		},
+	]
+
 	return (
 		<div className="drawer z-30  lg:hidden ">
 			<input
@@ -27,48 +54,18 @@ const Drawer = () => {
 					htmlFor="my-drawer"
 					aria-label="close sidebar"
 					className="drawer-overlay"></label>
-				<nav className="menu p-4 w-80 min-h-full gap-5 text-white bg-mainColor text-xl">
-					<a
-						onClick={handleClick}
-						href="#about"
-						className="hover:text-accentColor transition-color duration-500 p-2 mt-16  ">
-						O nas
-					</a>
-
-					<a
-						onClick={handleClick}
-						href="#benefits"
-						className="hover:text-accentColor transition-color duration-500 p-2">
-						Korzyści
-					</a>
-
-					<a
-						onClick={handleClick}
-						href="#chooseus"
-						className="hover:text-accentColor transition-color duration-500 p-2">
-						Dlaczego my?
-					</a>
-
-					<a
-						onClick={handleClick}
-						href="#steps"
-						className="hover:text-accentColor transition-color duration-500 p-2">
-						Współpraca
-					</a>
-
-					<a
-						onClick={handleClick}
-						href="#offer"
-						className="hover:text-accentColor transition-color duration-500 p-2">
-						Oferta
-					</a>
-
-					<a
-						onClick={handleClick}
-						href="#faq"
-						className="hover:text-accentColor transition-color duration-500 p-2">
-						FAQ
-					</a>
+				<nav className="menu p-4 w-80 min-h-full gap-5 text-white bg-mainColor text-xl pt-16">
+					{navItems.map((item, index) => {
+						return (
+							<a
+								key={index}
+								onClick={handleClick}
+								href={item.link}
+								className="hover:text-accentColor transition-color duration-500 p-2  ">
+								{item.name}
+							</a>
+						)
+					})}
 				</nav>
 			</div>
 		</div>

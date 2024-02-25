@@ -53,16 +53,6 @@
 	background: url('../../images/multipage.jpg') no-repeat center center/cover;
 }
 
-.card:hover .img1 {
-	background: url('../../images/lp.jpg') no-repeat center center/cover;
-}
-.card:hover .img2 {
-	background: url('../../images/onepage.jpg') no-repeat center center/cover;
-}
-.card:hover .img3 {
-	background: url('../../images/multipage.jpg') no-repeat center center/cover;
-}
-
 .title {
 	margin: 10px 0 0;
 	padding: 0;
@@ -74,7 +64,6 @@
 }
 
 .card .price {
-	
 	position: absolute;
 	bottom: 30px;
 	left: 15px;
@@ -96,12 +85,12 @@
 
 .card:hover {
 	transform: scale(1.1);
-	transition: transform 0.3s linear;
+	transition: transform 0.3s linear ;
 }
 
 .card:not(:hover) {
-	transform: scale(1);
-	transition: transform 0.3s linear;
+	transform: scale(1) ;
+	transition: transform 0.3s linear ;
 }
 
 .bottomLine {
@@ -110,19 +99,19 @@
 	left: 0;
 	width: 100%;
 	height: 5px;
-	background: #ffca0f;
 	border-radius: 0 0 8px 8px;
+
 }
 
-.card:nth-child(1) .bottomLine {
+.cardBox:nth-child(1) .bottomLine {
 	background: #2196f3;
 }
 
-.card:nth-child(2) .bottomLine {
+.cardBox:nth-child(2) .bottomLine {
 	background: #e91e63;
 }
 
-.card:nth-child(3) .bottomLine {
+.cardBox:nth-child(3) .bottomLine {
 	background: #23c186;
 }
 
@@ -138,7 +127,7 @@
 	}
 }
 
-@media screen and (max-width: 328px){
+@media screen and (max-width: 328px) {
 	.content {
 		height: 40rem;
 	}

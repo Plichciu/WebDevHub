@@ -1,9 +1,35 @@
 import logo from '../../images/mainLogoBlack.svg'
 import Drawer from '../Drawer/Drawer'
-import { Link } from 'react-router-dom'
 import { FiPhone } from 'react-icons/fi'
 
 const Navbar = () => {
+	const navItems = [
+		{
+			name: 'O nas',
+			link: '#about',
+		},
+		{
+			name: 'Korzyści',
+			link: '#benefits',
+		},
+		{
+			name: 'Dlaczego my?',
+			link: '#chooseus',
+		},
+		{
+			name: 'Współpraca',
+			link: '#steps',
+		},
+		{
+			name: 'Oferta',
+			link: '#offer',
+		},
+		{
+			name: 'FAQ',
+			link: '#faq',
+		},
+	]
+
 	return (
 		<div className="bg-[#000000b0] h-20 mx-auto fixed z-[500] w-full">
 			<div className="navbar max-w-[1800px] mx-auto h-full ">
@@ -12,44 +38,28 @@ const Navbar = () => {
 						<div className="lg:hidden">
 							<Drawer />
 						</div>
-						<div className='w-44 lg:w-60'>
-							<Link to="/">
-								<img src={logo} alt="Logo WebDevHub" className="h-10 lg:h-14 ml-3 lg:ml-0" />
-							</Link>
+						<div className="w-44 lg:w-60">
+							<a href="#main">
+								<img
+									src={logo}
+									alt="Logo WebDevHub"
+									className="h-10 lg:h-14 ml-3 lg:ml-0"
+								/>
+							</a>
 						</div>
 					</div>
 				</div>
 				<nav className="navbar-center hidden lg:flex lg:gap-5 text-lg  text-white">
-					<a
-						href="#about"
-						className="hover:text-accentColor hover:scale-90 transition-all duration-500 ">
-						O nas
-					</a>
-					<a
-						href="#benefits"
-						className="hover:text-accentColor hover:scale-90 transition-all duration-500">
-						Korzyści
-					</a>
-					<a
-						href="#chooseus"
-						className="hover:text-accentColor hover:scale-90 transition-all duration-500 ">
-						Dlaczego my?
-					</a>
-					<a
-						href="#steps"
-						className="hover:text-accentColor hover:scale-90 transition-all duration-500">
-						Współpraca
-					</a>
-					<a
-						href="#offer"
-						className="hover:text-accentColor hover:scale-90 transition-all duration-500">
-						Oferta
-					</a>
-					<a
-						href="#faq"
-						className="hover:text-accentColor hover:scale-90 transition-all duration-500">
-						FAQ
-					</a>
+					{navItems.map((item, index) => {
+						return (
+							<a
+								key={index}
+								href={item.link}
+								className="hover:text-accentColor mx-2 hover:scale-90 transition-all duration-500 ">
+								{item.name}
+							</a>
+						)
+					})}
 				</nav>
 				<div className="navbar-end">
 					<a

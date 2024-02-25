@@ -7,9 +7,9 @@ const Footer = () => {
 	return (
 		<footer className="footer-container">
 			<div className="flex flex-col items-center gap-2 lg:flex-row lg:justify-between">
-				<div>
+				<a href="#main" className="cursor-pointer">
 					<img src={mainLogoBlack} alt="Logo WebDevHub" className="h-10" />
-				</div>
+				</a>
 				<div className="text-sm space-y-1 lg:flex lg:items-center lg:gap-5 lg:space-y-0">
 					<div className="flex items-center gap-2">
 						<FaMailBulk />

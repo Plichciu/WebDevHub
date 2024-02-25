@@ -9,7 +9,7 @@ const Alert = ({ message }: { message: string }) => {
 				message === 'Dziękujemy, twój formularz został wysłany poprawnie.'
 					? 'alert-success'
 					: 'alert-error'
-			} flex fixed w-[90%] sm:w-96 bottom-5 left-5 opacity-80`}>
+			} flex fixed w-[90%] sm:w-96 bottom-5 left-5 rounded-sm`}>
 			<span>
 				{message === 'Dziękujemy, twój formularz został wysłany poprawnie.' ? (
 					<GoCheckCircle className="text-xl" />
