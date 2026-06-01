@@ -31,7 +31,7 @@ const Offer = () => {
 				<div className={styles.cardsContainer}>
 					{data.map((item, index) => {
 						return (
-							<div className={styles.cardBox} data-aos="zoom-in">
+							<div key={index} className={styles.cardBox} data-aos="zoom-in">
 								<div key={index} className={styles.card}>
 									<div className={`${styles.pic} ${styles[`img${index + 1}`]}`}>
 										<div className={styles.title}>
